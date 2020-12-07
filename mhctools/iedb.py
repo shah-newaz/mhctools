@@ -297,7 +297,7 @@ class IedbNetMHCpan(IedbBasePredictor):
             alleles=alleles,
             default_peptide_lengths=default_peptide_lengths,
             raise_on_error=raise_on_error,
-            prediction_method="netmhcpan",
+            prediction_method="netmhcpan_el",
             url=IEDB_MHC_CLASS_I_URL)
 
 class IedbSMM(IedbBasePredictor):
