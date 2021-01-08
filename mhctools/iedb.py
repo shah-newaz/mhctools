@@ -99,7 +99,6 @@ def _parse_iedb_response(response):
     required_columns = [
         "allele",
         "peptide",
-        "percentile_rank",
         "ic50",
         "start",
         "end",
@@ -298,7 +297,7 @@ class IedbNetMHCpan(IedbBasePredictor):
             alleles=alleles,
             default_peptide_lengths=default_peptide_lengths,
             raise_on_error=raise_on_error,
-            prediction_method="netmhcpan_ba",
+            prediction_method="netmhcpan_el",
             url=IEDB_MHC_CLASS_I_URL)
 
 class IedbSMM(IedbBasePredictor):
